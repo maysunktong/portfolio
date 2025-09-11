@@ -1,5 +1,6 @@
 import { notFound } from "next/navigation";
 import { worksData } from "../../../data/works";
+import Image from "next/image";
 
 export async function generateStaticParams() {
   return worksData.map((work) => ({
@@ -37,7 +38,14 @@ export default function WorkPage({ params }: { params: WorkType }) {
       {work.images && (
         <div className="w-full">
           {work.images.map((item) => (
-            <img key={item} src={item} alt={params.name} width={200} className="w-full" />
+            <Image
+              key={item}
+              src={item}
+              alt={work.name}
+              width={200}
+              height={300}
+              className="w-full"
+            />
           ))}
         </div>
       )}
