@@ -1,6 +1,5 @@
 import Link from "next/link";
 import MenuButton from "./ui/MenuButton";
-import { StatusIndicator } from "./ui/StatusIndicator";
 
 export default function Navigation() {
   return (

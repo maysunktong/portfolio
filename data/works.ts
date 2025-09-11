@@ -16,6 +16,7 @@ export const worksData = [
       "https://res.cloudinary.com/dpgdy4ayz/image/upload/v1757622618/Palettia-4_apvi2y.png",
     ],
     videos: [],
+    description: "",
   },
   {
     id: 2,
@@ -30,6 +31,7 @@ export const worksData = [
       "https://res.cloudinary.com/dpgdy4ayz/image/upload/v1757622559/Zoo-2_kex17g.png",
     ],
     videos: [],
+    description: "",
   },
   {
     id: 3,
@@ -46,6 +48,7 @@ export const worksData = [
       "https://res.cloudinary.com/dpgdy4ayz/image/upload/v1757622591/Game-4_nph8x6.png",
     ],
     videos: [],
+    description: "",
   },
 
   {
@@ -62,6 +65,7 @@ export const worksData = [
       "https://res.cloudinary.com/dpgdy4ayz/image/upload/v1757622659/Crispy-3_yune0q.png",
     ],
     videos: [],
+    description: "",
   },
   {
     id: 5,
@@ -71,7 +75,11 @@ export const worksData = [
     stacks: [],
     year: "",
     client: "",
-    images: ["https://res.cloudinary.com/dpgdy4ayz/image/upload/v1757622559/Zoo-1_vb1ya4.png", "https://res.cloudinary.com/dpgdy4ayz/image/upload/v1757622559/Zoo-2_kex17g.png"],
+    images: [
+      "https://res.cloudinary.com/dpgdy4ayz/image/upload/v1757622636/Rework-1_yx94ds.png",
+      "https://res.cloudinary.com/dpgdy4ayz/image/upload/v1757622637/Rework-2_ebiyuf.png",
+    ],
     videos: [],
+    description: "",
   },
 ];
