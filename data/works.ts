@@ -1,0 +1,77 @@
+import { slugify } from "../utils/utils";
+
+export const worksData = [
+  {
+    id: 1,
+    name: "Palettia",
+    slug: slugify("Palettia"),
+    category: "website",
+    stacks: [],
+    year: "",
+    client: "",
+    images: [
+      "https://res.cloudinary.com/dpgdy4ayz/image/upload/v1757622615/Palettia-1_klbflz.png",
+      "https://res.cloudinary.com/dpgdy4ayz/image/upload/v1757622616/Palettia-2_zsld1d.png",
+      "https://res.cloudinary.com/dpgdy4ayz/image/upload/v1757622616/Palettia-3_zjrrtn.png",
+      "https://res.cloudinary.com/dpgdy4ayz/image/upload/v1757622618/Palettia-4_apvi2y.png",
+    ],
+    videos: [],
+  },
+  {
+    id: 2,
+    name: "Sanctuary Zoo Website",
+    slug: slugify("Sanctuary Zoo Website"),
+    category: "website",
+    stacks: [],
+    year: "",
+    client: "",
+    images: [
+      "https://res.cloudinary.com/dpgdy4ayz/image/upload/v1757622559/Zoo-1_vb1ya4.png",
+      "https://res.cloudinary.com/dpgdy4ayz/image/upload/v1757622559/Zoo-2_kex17g.png",
+    ],
+    videos: [],
+  },
+  {
+    id: 3,
+    name: "Gustaf the Werewolf Slayer Game",
+    slug: slugify("Gustaf the Werewolf Slayer Game"),
+    category: "game",
+    stacks: [],
+    year: "",
+    client: "",
+    images: [
+      "https://res.cloudinary.com/dpgdy4ayz/image/upload/v1757622589/Game-1_frlfpp.png",
+      "https://res.cloudinary.com/dpgdy4ayz/image/upload/v1757622590/Game-2_f2sopv.png",
+      "https://res.cloudinary.com/dpgdy4ayz/image/upload/v1757622590/Game-3_lesnjv.png",
+      "https://res.cloudinary.com/dpgdy4ayz/image/upload/v1757622591/Game-4_nph8x6.png",
+    ],
+    videos: [],
+  },
+
+  {
+    id: 4,
+    name: "The Crispy Kale Restaurant",
+    slug: slugify("The Crispy Kale Restaurant"),
+    category: "website",
+    stacks: [],
+    year: "",
+    client: "",
+    images: [
+      "https://res.cloudinary.com/dpgdy4ayz/image/upload/v1757622657/Crispy-1_ih6wil.png",
+      "https://res.cloudinary.com/dpgdy4ayz/image/upload/v1757622658/Crispy-2_h7sfc9.png",
+      "https://res.cloudinary.com/dpgdy4ayz/image/upload/v1757622659/Crispy-3_yune0q.png",
+    ],
+    videos: [],
+  },
+  {
+    id: 5,
+    name: "Rework",
+    slug: slugify("Rework"),
+    category: "website",
+    stacks: [],
+    year: "",
+    client: "",
+    images: ["https://res.cloudinary.com/dpgdy4ayz/image/upload/v1757622559/Zoo-1_vb1ya4.png", "https://res.cloudinary.com/dpgdy4ayz/image/upload/v1757622559/Zoo-2_kex17g.png"],
+    videos: [],
+  },
+];
