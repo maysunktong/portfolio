@@ -14,6 +14,7 @@
   --font-inter: var(--font-inter);
   --font-dm: var(--font-dm);
   --font-quicksand: var(--font-quicksand);
+  --font-jet: var(--font-jet);
 }
 
 @media (prefers-color-scheme: dark) {
