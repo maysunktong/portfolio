@@ -3,14 +3,17 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --text-subtitle: #767676;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-subtitle: var(--text-subtitle);
   --font-lato: var(--font-lato);
   --font-inter: var(--font-inter);
   --font-dm: var(--font-dm);
+  --font-quicksand: var(--font-quicksand);
 }
 
 @media (prefers-color-scheme: dark) {
