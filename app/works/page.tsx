@@ -33,6 +33,7 @@ export default function SelectedWorks() {
                 href={`/works/${item.slug}`}
                 className="text-gray-800 text-lg font-thin"
               >
+                
                 {item.category}
               </Link>
             </div>

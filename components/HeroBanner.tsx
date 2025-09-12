@@ -4,18 +4,18 @@ import { Mail } from "lucide-react";
 
 export default function HeroBanner() {
   return (
-    <section className="w-full md:w-3/4 lg:w-2/3">
+    <section className="w-full md:w-3/4 lg:w-2/3 py-22">
       {/* Profile */}
-      <div className="pt-12 md:pt-16 pb-6 flex justify-start items-center">
+      <div className="pb-6 flex justify-start items-center">
         <ProfileImage />
       </div>
       {/* Text Content */}
       <div className="space-y-4 md:space-y-3 py-6">
-        <h1 className="font-jet text-5xl md:text-6xl lg:text-7xl font-bold tracking-tighter  dark:text-white">
+        <h1 className="font-jet text-5xl md:text-6xl lg:text-7xl font-bold tracking-tighter dark:text-white">
           May Sunktong
         </h1>
-        <h2 className="font-jet text-5xl md:text-4xl lg:text-7xl font-semibold tracking-tighter dark:text-white">
-          Frontend Student
+        <h2 className="font-jet text-5xl md:text-4xl lg:text-7xl font-bold tracking-tighter dark:text-white">
+          Frontend Dev Student
         </h2>
         <p className="text-sm md:text-lg text-[#767676] max-w-xl md:max-w-2xl py-2 leading-6">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit ut
