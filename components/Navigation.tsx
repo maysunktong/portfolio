@@ -6,7 +6,7 @@ export default function Navigation() {
   return (
     <header className="flex justify-between items-center">
       <Link href="/">
-        <Image src="/logo/logo-light.png" alt="logo" width={300} height={300} />
+        <Image src="/logo/logo-light.png" alt="logo" width={150} height={150} />
       </Link>
       <nav>
         <ul className="flex gap-3">

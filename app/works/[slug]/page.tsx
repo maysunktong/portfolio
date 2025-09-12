@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 import { worksData } from "../../../data/works";
 import Image from "next/image";
+import Video from "../../../components/Video";
 
 export async function generateStaticParams() {
   return worksData.map((work) => ({
@@ -45,7 +46,7 @@ export default async function WorkPage({
     <div className="max-w-3xl mx-auto px-6 py-12">
       <h1 className="text-3xl font-bold text-gray-800">{work.name}</h1>
       <p className="mt-4 text-gray-600">{work.description}</p>
-
+      <Video src={work.videoLink} title={work.name} />
       {work.images && work.images.length > 0 && (
         <div className="mt-8 space-y-6">
           {work.images.map((item, index) => (
@@ -56,7 +57,7 @@ export default async function WorkPage({
                 width={1000}
                 height={1000}
                 className="w-full h-auto rounded-lg shadow-lg"
-                priority={index === 0} // Load first image with priority
+                priority={index === 0}
               />
             </div>
           ))}
