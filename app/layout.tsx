@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Lato, Inter, DM_Sans } from "next/font/google";
+import { Lato, Inter, DM_Sans, Quicksand } from "next/font/google";
 import "./globals.css";
 import Navigation from "../components/Navigation";
 
@@ -21,6 +21,12 @@ const DMSans = DM_Sans({
   weight: ["400", "500", "600", "700"],
 });
 
+const QuicksandSans = Quicksand({
+  subsets: ["latin"],
+  variable: "--font-quicksand",
+  weight: ["400", "500", "600", "700"],
+});
+
 export const metadata: Metadata = {
   title: "May Sunktong",
   description: "Portfolio",
@@ -34,7 +40,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${LatoSans.variable} ${InterSans.variable} ${DMSans.variable} antialiased min-h-screen w-full flex justify-center`}
+        className={`${LatoSans.variable} ${InterSans.variable} ${DMSans.variable} ${QuicksandSans.variable} antialiased min-h-screen w-full flex justify-center`}
       >
         <div className="w-full md:w-4/5 lg:w-3/5 mx-auto px-4">
           <Navigation />

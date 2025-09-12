@@ -59,7 +59,7 @@ export function StatusIndicator({ status }: StatusIndicatorProps) {
 
   return (
     <div
-      className={`flex items-center gap-3 rounded-3xl border-1 ${colorClasses.borderColor} py-1 px-3 w-fit`}
+      className={`flex items-center gap-3 rounded-3xl ${colorClasses.borderColor} py-1 px-3 w-fit`}
     >
       <div className="relative w-4 h-4 flex items-center justify-center">
         <span

@@ -1,23 +1,44 @@
 import Link from "next/link";
+import Image from "next/image";
 import { worksData } from "../../data/works";
+import Header from "../../components/ui/Header";
 
 export default function SelectedWorks() {
   return (
-    <div>
-      <h1>Selected Works</h1>
-      <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse
-        consequuntur rem nostrum quod pariatur, odit dolore consectetur laborum
-        est, magni delectus debitis voluptate temporibus voluptates consequatur
-        similique iste distinctio, corporis officiis ut aperiam commodi?
-        Exercitationem tempore reprehenderit quidem natus, rem nam quisquam
-        maxime! Cupiditate molestias, fuga quaerat facere deserunt eum?
-      </p>
-      {worksData.map((item) => (
-        <div key={item.id}>
-          <Link href={`/works/${item.slug}`} className="hover:underline">{item.name}</Link>
-        </div>
-      ))}
-    </div>
+    <>
+      <Header text="Selected Works" />
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        {worksData.map((item) => (
+          <div key={item.id} className="flex flex-col gap-2">
+            <Link
+              href={`/works/${item.slug}`}
+              className="block overflow-hidden rounded-lg"
+            >
+              <Image
+                src={item.images[0]}
+                alt={item.name}
+                width={500}
+                height={500}
+                className="rounded-lg object-cover w-full transform transition-transform duration-500 ease-in-out hover:scale-105"
+              />
+            </Link>
+            <div className="flex justify-between items-center">
+              <Link
+                href={`/works/${item.slug}`}
+                className="text-gray-800 text-lg font-thin"
+              >
+                {item.name}
+              </Link>
+              <Link
+                href={`/works/${item.slug}`}
+                className="text-gray-800 text-lg font-thin"
+              >
+                {item.category}
+              </Link>
+            </div>
+          </div>
+        ))}
+      </div>
+    </>
   );
 }
