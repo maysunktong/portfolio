@@ -1,7 +1,8 @@
 import { CornerDownRight } from "lucide-react";
 import Link from "next/link";
+import { LinkButtonTypes } from "../../types/globlas";
 
-export default function Menu({ label, href, bg = "white", textColor = "black", icon=<CornerDownRight /> }: LinkButtonValues) {
+export default function Menu({ label, href, bg = "white", textColor = "black", icon=<CornerDownRight /> }: LinkButtonTypes) {
   return (
     <Link
       href={href}

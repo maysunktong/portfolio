@@ -1,6 +1,6 @@
 import { ReactElement } from "react";
 
-type LinkButtonValues = {
+type LinkButtonTypes= {
   href: string;
   label: string;
   bg?: string,
