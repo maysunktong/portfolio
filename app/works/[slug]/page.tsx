@@ -8,8 +8,13 @@ export async function generateStaticParams() {
   }));
 }
 
-export async function generateMetadata({ params }: { params: WorkType }) {
-  const work = worksData.find((w) => w.slug === params.slug);
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}) {
+  const { slug } = await params;
+  const work = worksData.find((w) => w.slug === slug);
 
   if (!work) {
     return {
@@ -24,28 +29,36 @@ export async function generateMetadata({ params }: { params: WorkType }) {
   };
 }
 
-export default function WorkPage({ params }: { params: WorkType }) {
-  const work = worksData.find((w) => w.slug === params.slug);
+export default async function WorkPage({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}) {
+  const { slug } = await params;
+  const work = worksData.find((w) => w.slug === slug);
 
   if (!work) {
     notFound();
   }
+
   return (
     <div className="max-w-3xl mx-auto px-6 py-12">
       <h1 className="text-3xl font-bold text-gray-800">{work.name}</h1>
       <p className="mt-4 text-gray-600">{work.description}</p>
 
-      {work.images && (
-        <div className="w-full">
-          {work.images.map((item) => (
-            <Image
-              key={item}
-              src={item}
-              alt={work.name}
-              width={1000}
-              height={1000}
-              className="w-full"
-            />
+      {work.images && work.images.length > 0 && (
+        <div className="mt-8 space-y-6">
+          {work.images.map((item, index) => (
+            <div key={item} className="w-full">
+              <Image
+                src={item}
+                alt={`${work.name} - Image ${index + 1}`}
+                width={1000}
+                height={1000}
+                className="w-full h-auto rounded-lg shadow-lg"
+                priority={index === 0} // Load first image with priority
+              />
+            </div>
           ))}
         </div>
       )}
