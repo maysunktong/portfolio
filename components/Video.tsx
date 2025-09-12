@@ -1,3 +1,5 @@
+import { VideoProps } from "../types/globlas";
+
 export default function Video({ title, src }: VideoProps) {
   return (
     <div className="relative w-full pt-[56%]">
