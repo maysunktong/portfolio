@@ -6,10 +6,9 @@ export default function HeroBanner() {
   return (
     <section className="w-full md:w-3/4 lg:w-2/3">
       {/* Profile */}
-      <div className="pt-12 md:pt-16 pb-6 flex justify-center md:justify-start">
+      <div className="pt-12 md:pt-16 pb-6 flex justify-start items-center">
         <ProfileImage />
       </div>
-
       {/* Text Content */}
       <div className="space-y-4 md:space-y-3 py-6">
         <h1 className="font-jet text-5xl md:text-6xl lg:text-7xl font-bold tracking-tighter  dark:text-white">

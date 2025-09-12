@@ -8,21 +8,19 @@ export default function Navigation() {
     <header className="flex justify-between items-center py-4">
       <Link href="/" className="flex gap-3 justify-around items-center">
         <Image
-        src="/logo/logo-light.png"
-        alt="logo"
-        width={100}
-        height={100}
-        className="block dark:hidden"
-      />
-      {/* Dark mode image */}
-      <Image
-        src="/logo/logo-dark.png"
-        alt="logo"
-        width={100}
-        height={100}
-        className="hidden dark:block"
-      />
-      <StatusIndicator status="lia" />
+          src="/logo/logo-light.png"
+          alt="logo"
+          width={100}
+          height={100}
+          className="block dark:hidden"
+        />
+        <Image
+          src="/logo/logo-dark.png"
+          alt="logo"
+          width={100}
+          height={100}
+          className="hidden dark:block"
+        />
         <StatusIndicator status="lia" />
       </Link>
       <nav>
