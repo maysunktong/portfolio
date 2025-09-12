@@ -1,11 +1,12 @@
 import Link from "next/link";
+import Image from "next/image";
 import MenuButton from "./ui/MenuButton";
 
 export default function Navigation() {
   return (
     <header className="flex justify-between items-center">
       <Link href="/">
-        <img src="/logo/logo-light.png" alt="logo" width={100} />
+        <Image src="/logo/logo-light.png" alt="logo" width={300} height={300} />
       </Link>
       <nav>
         <ul className="flex gap-3">
