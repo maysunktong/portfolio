@@ -1,7 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
 import MenuButton from "./ui/MenuButton";
-import { StatusIndicator } from "./ui/StatusIndicator";
 
 export default function Navigation() {
   return (
@@ -21,9 +20,8 @@ export default function Navigation() {
           height={100}
           className="hidden dark:block"
         />
-        <StatusIndicator status="lia" />
       </Link>
-      <nav>
+      {/* <nav>
         <ul className="flex gap-3">
           <li>
             <MenuButton href="/works" label="Works" />
@@ -32,10 +30,10 @@ export default function Navigation() {
             <MenuButton href="/" label="Resume" />
           </li>
           <li>
-            <MenuButton href="/" label="About me" />
+            <MenuButton href="/" label="Mini Blog" />
           </li>
         </ul>
-      </nav>
+      </nav> */}
     </header>
   );
 }

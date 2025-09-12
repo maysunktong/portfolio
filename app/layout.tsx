@@ -42,6 +42,9 @@ const JetBrains = JetBrains_Mono({
 export const metadata: Metadata = {
   title: "May Sunktong",
   description: "Portfolio",
+  icons: {
+    icon: "/favicon.png",
+  },
 };
 
 export default function RootLayout({

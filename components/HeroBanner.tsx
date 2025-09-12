@@ -1,6 +1,7 @@
 import ProfileImage from "./ui/ProfileImage";
 import MenuButton from "./ui/MenuButton";
 import { Mail } from "lucide-react";
+import { StatusIndicator } from "./ui/StatusIndicator";
 
 export default function HeroBanner() {
   return (
@@ -11,6 +12,7 @@ export default function HeroBanner() {
       </div>
       {/* Text Content */}
       <div className="space-y-4 md:space-y-3 py-6">
+        <StatusIndicator status="lia" />
         <h1 className="font-jet text-5xl md:text-6xl lg:text-7xl font-bold tracking-tighter dark:text-white">
           May Sunktong
         </h1>
@@ -18,13 +20,14 @@ export default function HeroBanner() {
           Frontend Dev Student
         </h2>
         <p className="text-sm md:text-lg text-[#767676] max-w-xl md:max-w-2xl py-2 leading-6">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit ut
-          alias hic tempora saepe fugiat dolorem impedit sint incidunt magni
-          repellat quibusdam voluptates enim excepturi.
+          Hi there!I am a web development student based in Stockholm with a passion for creating user-friendly and creative websites. I love turning ideas into clean, responsive interfaces as I have a strong eye for design.
+         
         </p>
+        <p className="max-w-xl md:max-w-2xl font-bold"> I am looking for a 5-month long internship from <span className="underline">January to May 2026 </span>(can start earlier if needed)
+           Thanks for stopping by — please checkout my work below!</p>
       </div>
       <MenuButton
-        href="/works"
+        href="mailto:suras.sunktong@gmail.com"
         label="Contact me"
         bg="black"
         textColor="white"
