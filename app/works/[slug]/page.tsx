@@ -42,8 +42,8 @@ export default function WorkPage({ params }: { params: WorkType }) {
               key={item}
               src={item}
               alt={work.name}
-              width={200}
-              height={300}
+              width={1000}
+              height={1000}
               className="w-full"
             />
           ))}
