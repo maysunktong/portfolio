@@ -12,10 +12,10 @@ export default function HeroBanner() {
 
       {/* Text Content */}
       <div className="space-y-4 md:space-y-3 py-6">
-        <h1 className="font-jet text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight  dark:text-white">
+        <h1 className="font-jet text-5xl md:text-6xl lg:text-7xl font-bold tracking-tighter  dark:text-white">
           May Sunktong
         </h1>
-        <h2 className="font-jet text-5xl md:text-4xl lg:text-7xl font-semibold tracking-tight dark:text-gray-300">
+        <h2 className="font-jet text-5xl md:text-4xl lg:text-7xl font-semibold tracking-tighter dark:text-white">
           Frontend Student
         </h2>
         <p className="text-sm md:text-lg text-[#767676] max-w-xl md:max-w-2xl py-2 leading-6">
