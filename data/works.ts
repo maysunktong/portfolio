@@ -16,7 +16,7 @@ export const worksData = [
       "https://res.cloudinary.com/dpgdy4ayz/image/upload/v1757622618/Palettia-4_apvi2y.png",
     ],
     description: "",
-    videoLink: ""
+    videoLink: "https://player.cloudinary.com/embed/?cloud_name=dpgdy4ayz&public_id=palettia720_mbcjjh&profile=cld-default"
   },
   {
     id: 2,

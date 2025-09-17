@@ -5,7 +5,7 @@ import { StatusIndicator } from "./ui/StatusIndicator";
 
 export default function HeroBanner() {
   return (
-    <section className="w-full md:w-3/4 lg:w-2/3 py-22">
+    <section className="w-full md:w-3/4 lg:w-full py-22">
       {/* Profile */}
       <div className="pb-6 flex justify-start items-center">
         <ProfileImage />
