@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import MenuButton from "./ui/MenuButton";
+import NavItemButton from "./ui/NavItemButton";
 
 export default function Navigation() {
   return (
@@ -21,19 +21,16 @@ export default function Navigation() {
           className="hidden dark:block"
         />
       </Link>
-      {/* <nav>
-        <ul className="flex gap-3">
+      <nav>
+        <ul className="flex gap-0 md:gap-3 flex-col md:flex-row">
           <li>
-            <MenuButton href="/works" label="Works" />
+            <NavItemButton href="/works" label="Works" />
           </li>
           <li>
-            <MenuButton href="/" label="Resume" />
-          </li>
-          <li>
-            <MenuButton href="/" label="Mini Blog" />
+            <NavItemButton href="/" label="Resume" />
           </li>
         </ul>
-      </nav> */}
+      </nav>
     </header>
   );
 }

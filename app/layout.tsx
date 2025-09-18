@@ -57,7 +57,7 @@ export default function RootLayout({
       <body
         className={`${LatoSans.variable} ${InterSans.variable} ${DMSans.variable} ${QuicksandSans.variable} ${JetBrains.variable} antialiased min-h-screen w-full flex justify-center`}
       >
-        <div className="w-full md:w-4/5 lg:w-3/5 mx-auto px-4">
+        <div className="w-full md:w-4/5 lg:w-2/3 mx-auto px-4">
           <Navigation />
           {children}
         </div>

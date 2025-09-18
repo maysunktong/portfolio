@@ -1,11 +1,13 @@
 import HeroBanner from "../components/HeroBanner";
-import SelectedWorks from "./works/page";
+import Header from "../components/ui/Header";
+import WorkGallery from "../components/WorkGallery";
 
 export default function Home() {
   return (
     <>
       <HeroBanner />
-      <SelectedWorks />
+      <Header text="Selected Works" />
+      <WorkGallery />
     </>
   );
 }
