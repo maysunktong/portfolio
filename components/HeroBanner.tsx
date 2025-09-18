@@ -22,7 +22,7 @@ export default function HeroBanner() {
         <p className="text-sm md:text-lg text-[#767676] max-w-xl md:max-w-2xl py-2 leading-6">
           Hi! I am a web development student at Futuregames Stockholm with a keen
           eye for design and a strong passion for building user-friendly high
-          performing webapps. I'm a fast learner, driven, and thrive in both team-driven projects and solo responsibilities.
+          performing webapps. I am a fast learner, driven, and thrive in both team-driven projects and solo responsibilities.
         </p>
         <p className="max-w-xl md:max-w-2xl font-bold">
           I am looking for a 5-month long internship in Stockholm.
