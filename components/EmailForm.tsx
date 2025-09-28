@@ -17,7 +17,7 @@ export default function EmailForm({ onClose }: { onClose: () => void }) {
   };
 
   return (
-    <div className="fixed z-100 bottom-4 right-4 w-96 bg-foreground rounded-2xl shadow-2xl border border-gray-200 p-6 animate-slide-up text-black">
+    <div className="fixed z-100 bottom-4 right-4 w-70 md:w-96 bg-foreground rounded-2xl shadow-2xl border border-gray-200 p-6 animate-slide-up text-black">
       {/* Header */}
       <div className="flex justify-between items-center mb-4">
         <h2 className="text-lg font-semibold">Send Email</h2>
