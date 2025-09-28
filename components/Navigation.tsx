@@ -26,9 +26,9 @@ export default function Navigation() {
           <li>
             <NavItemButton href="/works" label="Works" />
           </li>
-          <li>
+          {/* <li>
             <NavItemButton href="/" label="Resume" />
-          </li>
+          </li> */}
         </ul>
       </nav>
     </header>
