@@ -1,13 +1,12 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { ReactElement, useState } from "react";
 import { X } from "lucide-react";
 
-export default function EmailForm() {
+export default function EmailForm({ onClose }: { onClose: () => void }) {
   const [sender, setSender] = useState("");
   const [subject, setSubject] = useState("");
   const [body, setBody] = useState("");
-  const [isOpen, setIsOpen] = useState(true);
 
   const handleSend = () => {
     const recipient = "suras.sunktong@gmail.com";
@@ -17,8 +16,6 @@ export default function EmailForm() {
     window.open(gmailLink, "_blank");
   };
 
-  if (!isOpen) return null;
-
   return (
     <div className="fixed z-100 bottom-4 right-4 w-96 bg-foreground rounded-2xl shadow-2xl border border-gray-200 p-6 animate-slide-up text-black">
       {/* Header */}
@@ -26,7 +23,7 @@ export default function EmailForm() {
         <h2 className="text-lg font-semibold">Send Email</h2>
         <button
           type="button"
-          onClick={() => setIsOpen(false)}
+          onClick={onClose}
           className="p-1 rounded-full hover:bg-gray-100"
         >
           {""}

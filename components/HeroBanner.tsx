@@ -11,6 +11,7 @@ export default function HeroBanner() {
   return (
     <section className="w-full md:w-3/4 lg:w-full py-22 flex flex-col lg:flex-row gap-8">
       <div className="flex-1">
+        {/* Profile + Intro */}
         <div className="pb-6 flex justify-start items-center">
           <ProfileImage />
         </div>
@@ -44,6 +45,8 @@ export default function HeroBanner() {
             </span>
           </p>
         </div>
+
+        {/* Buttons */}
         <div className="flex flex-wrap gap-2">
           <MenuButton
             href="https://www.linkedin.com/in/may-sunktong-276b53143/"
@@ -57,6 +60,12 @@ export default function HeroBanner() {
             bg="black"
             textColor="white"
           />
+          <MenuButton
+            href="https://github.com/maysunktong"
+            label="Github"
+            bg="black"
+            textColor="white"
+          />
           <button
             type="button"
             onClick={() => setShowEmailForm(!showEmailForm)}
@@ -66,9 +75,11 @@ export default function HeroBanner() {
           </button>
         </div>
       </div>
+
+      {/* Email form */}
       {showEmailForm && (
         <div className="fixed bottom-4 right-4 z-[9999]">
-          <EmailForm />
+          <EmailForm onClose={() => setShowEmailForm(!showEmailForm)} />
         </div>
       )}
     </section>
