@@ -4,7 +4,6 @@ import ProfileImage from "./ui/ProfileImage";
 import MenuButton from "./ui/MenuButton";
 import { StatusIndicator } from "./ui/StatusIndicator";
 import EmailForm from "./EmailForm";
-import TechnicalSkills from "./TechnicalSkills";
 
 export default function HeroBanner() {
   const [showEmailForm, setShowEmailForm] = useState(false);
