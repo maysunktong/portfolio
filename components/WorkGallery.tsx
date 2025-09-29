@@ -4,7 +4,7 @@ import { worksData } from "../data/works";
 
 export default function WorkGallery() {
   return (
-    <div className="font-mono grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    <div className="font-mono grid grid-cols-1 md:grid-cols-2 gap-6">
       {worksData.map((item) => (
         <div
           key={item.id}
