@@ -40,10 +40,26 @@ const JetBrains = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "May Sunktong",
+ title: "May Sunktong – Frontend Developer",
   description: "Portfolio",
   icons: {
     icon: "/favicon.png",
+  },
+  openGraph: {
+    title: "May Sunktong – Frontend Developer",
+    description: "Portfolio",
+    url: "https://portfolio-maysunktong.vercel.app/",
+    siteName: "May Sunktong Portfolio",
+    images: [
+      {
+        url: "https://res.cloudinary.com/dpgdy4ayz/image/upload/v1759152087/CleanShot_2568-09-29_at_15.21.13_2x_h2vdwh.png",
+        width: 1200,
+        height: 630,
+        alt: "Portfolio preview image",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
   },
 };
 
