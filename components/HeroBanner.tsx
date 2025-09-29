@@ -34,9 +34,7 @@ export default function HeroBanner() {
           </p>
           <p className="font-bold">
             Would be a good fit for:{" "}
-            <span className="font-semibold underline">
-              frontend, fullstack
-            </span>
+            <span className="font-semibold underline">frontend, fullstack</span>
           </p>
           <p className="font-bold">
             Start from:{" "}

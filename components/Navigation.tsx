@@ -26,9 +26,9 @@ export default function Navigation() {
           <li>
             <NavItemButton href="/works" label="Works" />
           </li>
-          {/* <li>
-            <NavItemButton href="/" label="Resume" />
-          </li> */}
+          <li>
+            <NavItemButton target="_blank" href="https://drive.google.com/file/d/1oN6EgAurVtGCjzrvhRQ0YTZirobftxFV/view" label="CV" />
+          </li>
         </ul>
       </nav>
     </header>
