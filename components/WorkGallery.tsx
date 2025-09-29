@@ -4,7 +4,7 @@ import { worksData } from "../data/works";
 
 export default function WorkGallery() {
   return (
-    <div className="font-mono grid grid-cols-1 md:grid-cols-2 gap-6">
+    <div className="font-mono grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
       {worksData.map((item) => (
         <div
           key={item.id}
@@ -13,7 +13,7 @@ export default function WorkGallery() {
           {/* Image container with fixed aspect ratio */}
           <Link
             href={`/works/${item.slug}`}
-            className="block relative w-full h-50 md:h-70 lg:h-80"
+            className="block relative w-full h-50 md:h-70 lg:h-90"
           >
             <Image
               src={item.images[0]}
