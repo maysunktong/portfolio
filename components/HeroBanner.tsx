@@ -35,7 +35,7 @@ export default function HeroBanner() {
           <p className="font-bold">
             Would be a good fit for:{" "}
             <span className="font-semibold underline">
-              frontend, fullstack, react native
+              frontend, fullstack
             </span>
           </p>
           <p className="font-bold">
