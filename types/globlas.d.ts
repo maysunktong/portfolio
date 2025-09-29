@@ -7,6 +7,7 @@ type LinkButtonTypes= {
   textColor?: string;
   icon?: ReactElement;
   target?: string;
+  onClick?: () => void
 };
 
 type VideoProps = {
