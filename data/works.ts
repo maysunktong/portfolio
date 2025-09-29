@@ -69,6 +69,21 @@ export const worksData = [
   },
   {
     id: 5,
+    name: "Soundboard",
+    slug: slugify("Soundboard"),
+    category: "small app",
+    stacks: [],
+    year: "",
+    client: "",
+    images: [
+      "https://res.cloudinary.com/dpgdy4ayz/image/upload/v1759103985/CleanShot_2568-09-29_at_01.59.30_2x_hbc4ry.png",
+      "https://res.cloudinary.com/dpgdy4ayz/image/upload/v1759104024/CleanShot_2568-09-29_at_02.00.04_2x_mehr0p.png",
+    ],
+    description: "",
+    videoLink: ""
+  },
+  {
+    id: 6,
     name: "Rework",
     slug: slugify("Rework"),
     category: "website",

@@ -10,5 +10,5 @@ type LinkButtonTypes= {
 
 type VideoProps = {
   title: string;
-  src: string;
+  src: string | null;
 };

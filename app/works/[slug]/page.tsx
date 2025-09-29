@@ -3,6 +3,7 @@ import { worksData } from "../../../data/works";
 import Image from "next/image";
 import Video from "../../../components/Video";
 import Header from "../../../components/ui/Header";
+import Soundboard from "../../../components/Soundboard";
 
 export async function generateStaticParams() {
   return worksData.map((work) => ({
@@ -47,7 +48,12 @@ export default async function WorkPage({
     <div className="w-full">
       <Header text={work.name} />
       <p className="mt-4 text-gray-600">{work.description}</p>
-      <Video src={work.videoLink} title={work.name} />
+      {work.name === "Soundboard" ? (
+        <Soundboard />
+      ) : (
+        <Video src={work.videoLink} title={work.name} />
+      )}
+
       {work.images && work.images.length > 0 && (
         <div className="mt-8 space-y-6">
           {work.images.map((item, index) => (
