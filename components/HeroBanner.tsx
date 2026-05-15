@@ -1,7 +1,6 @@
 "use client";
 import { useState } from "react";
 import ProfileImage from "./ui/ProfileImage";
-import MenuButton from "./ui/MenuButton";
 import { StatusIndicator } from "./ui/StatusIndicator";
 import EmailForm from "./EmailForm";
 import HeroButtons from "./HeroButtons";
@@ -19,7 +18,7 @@ export default function HeroBanner() {
         </div>
 
         <div className="space-y-3 md:space-y-8">
-          <StatusIndicator status="lia" />
+          <StatusIndicator status="available" />
 
           <h1 className="font-jet text-4xl md:text-6xl lg:text-7xl font-bold tracking-tighter dark:text-white leading-tight">
             May Sunktong
@@ -35,23 +34,7 @@ export default function HeroBanner() {
             high performing webapps. I am a fast learner, driven, and thrive in
             both team-driven projects and solo responsibilities.
           </p>
-          <div>
-            <p className="max-w-xl md:max-w-2xl font-bold leading-relaxed">
-              I am looking for a 5-month long internship in Stockholm.
-            </p>
-            <p className="font-bold leading-relaxed">
-              Would be a good fit for:{" "}
-              <span className="font-semibold underline">
-                frontend, fullstack
-              </span>
-            </p>
-            <p className="font-bold leading-relaxed">
-              Start from:{" "}
-              <span className="font-semibold underline">
-                January to May 2026 (can start earlier if needed)
-              </span>
-            </p>
-          </div>
+
         </div>
         {/* Technical Skills */}
         <TechnicalSkills />

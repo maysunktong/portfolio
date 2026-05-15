@@ -16,7 +16,8 @@ export const worksData = [
       "https://res.cloudinary.com/dpgdy4ayz/image/upload/v1757622618/Palettia-4_apvi2y.png",
     ],
     description: "",
-    videoLink: "https://player.cloudinary.com/embed/?cloud_name=dpgdy4ayz&public_id=palettia720_mbcjjh&profile=cld-default"
+    videoLink: "https://player.cloudinary.com/embed/?cloud_name=dpgdy4ayz&public_id=palettia720_mbcjjh&profile=cld-default",
+    link: "https://palettia-context.vercel.app/"
   },
   {
     id: 2,
@@ -31,7 +32,8 @@ export const worksData = [
       "https://res.cloudinary.com/dpgdy4ayz/image/upload/v1757622559/Zoo-2_kex17g.png",
     ],
     description: "",
-    videoLink: "https://player.cloudinary.com/embed/?cloud_name=dpgdy4ayz&public_id=zoo720_ia2ji1&profile=cld-default"
+    videoLink: "https://player.cloudinary.com/embed/?cloud_name=dpgdy4ayz&public_id=zoo720_ia2ji1&profile=cld-default",
+    link: "https://zoo-react-pi.vercel.app/"
   },
   {
     id: 3,
@@ -48,7 +50,8 @@ export const worksData = [
       "https://res.cloudinary.com/dpgdy4ayz/image/upload/v1757622591/Game-4_nph8x6.png",
     ],
     description: "",
-    videoLink: "https://player.cloudinary.com/embed/?cloud_name=dpgdy4ayz&public_id=game720_n61of9&profile=cld-default"
+    videoLink: "https://player.cloudinary.com/embed/?cloud_name=dpgdy4ayz&public_id=game720_n61of9&profile=cld-default",
+    link: "https://gustaf-the-werewolf-slayer.vercel.app/"
   },
 
   {
@@ -65,7 +68,8 @@ export const worksData = [
       "https://res.cloudinary.com/dpgdy4ayz/image/upload/v1757622659/Crispy-3_yune0q.png",
     ],
     description: "",
-    videoLink: "https://player.cloudinary.com/embed/?cloud_name=dpgdy4ayz&public_id=crispykale720_pzudyb&profile=cld-default"
+    videoLink: "https://player.cloudinary.com/embed/?cloud_name=dpgdy4ayz&public_id=crispykale720_pzudyb&profile=cld-default",
+    link: "https://the-crispy-kale.vercel.app/"
   },
   {
     id: 5,
@@ -80,7 +84,7 @@ export const worksData = [
       "https://res.cloudinary.com/dpgdy4ayz/image/upload/v1759104024/CleanShot_2568-09-29_at_02.00.04_2x_mehr0p.png",
     ],
     description: "",
-    videoLink: ""
+    videoLink: "",
   },
   {
     id: 6,
@@ -95,6 +99,7 @@ export const worksData = [
       "https://res.cloudinary.com/dpgdy4ayz/image/upload/v1757622637/Rework-2_ebiyuf.png",
     ],
     description: "",
-    videoLink: "https://player.cloudinary.com/embed/?cloud_name=dpgdy4ayz&public_id=rework720_x62vzn&profile=cld-default"
+    videoLink: "https://player.cloudinary.com/embed/?cloud_name=dpgdy4ayz&public_id=rework720_x62vzn&profile=cld-default",
+    link: "https://re-work-mui-ts.vercel.app/"
   },
 ];

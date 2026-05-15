@@ -4,6 +4,8 @@ import Image from "next/image";
 import Video from "../../../components/Video";
 import Header from "../../../components/ui/Header";
 import Soundboard from "../../../components/Soundboard";
+import Link from "next/link";
+import { ExternalLink } from "lucide-react";
 
 export async function generateStaticParams() {
   return worksData.map((work) => ({
@@ -46,8 +48,27 @@ export default async function WorkPage({
 
   return (
     <div className="w-full">
-      <Header text={work.name} />
+      <Link href="/works">
+        <button type="button" className="mt-6 mb-4 text-md text-white hover:text-gray-400 cursor-pointer">
+          &larr; Back to Works
+        </button>
+      </Link>
+      <div className="flex gap-6 justify-start items-center">
+        <Header text={work.name} />
+        {work.link && (
+          <Link
+            href={work.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 text-white hover:text-blue-400 transition-colors"
+            aria-label={`Open ${work.name} link in a new tab`}
+          >
+            <ExternalLink size={32} />
+          </Link>
+        )}
+      </div>
       <p className="mt-4 text-gray-600">{work.description}</p>
+
       {work.name === "Soundboard" ? (
         <Soundboard />
       ) : (

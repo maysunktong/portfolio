@@ -14,12 +14,6 @@ export default function HeroButtons({
         textColor="white"
       />
       <MenuButton
-        href="https://discord.gg/ss7tn39GPJ"
-        label="Discord"
-        bg="black"
-        textColor="white"
-      />
-      <MenuButton
         href="https://github.com/maysunktong"
         label="Github"
         bg="black"

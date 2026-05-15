@@ -35,7 +35,7 @@ const statusConfig: Record<
     },
   },
   available: {
-    label: "Available for hiring",
+    label: "Job Seeking",
     colorClasses: {
       bg: "bg-green-500",
       ping: "bg-green-500",
