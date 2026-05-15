@@ -1,6 +1,6 @@
 "use client";
 
-import React, { ReactElement, useState } from "react";
+import React, { useState } from "react";
 import { X } from "lucide-react";
 
 export default function EmailForm({ onClose }: { onClose: () => void }) {
